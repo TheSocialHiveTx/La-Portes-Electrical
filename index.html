@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Portes Electrical | Expert Utility Contractor in La Porte, TX</title>
+    <meta name="description" content="Fast & safe electrical repairs in La Porte, TX. Licensed utility contractor specializing in panel upgrades, emergency repairs, and wiring. Call (346) 384-8735.">
+    
+    <!-- Scripts & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        @keyframes pulse-custom {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(250, 204, 21, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 204, 21, 0); }
+        }
+        
+        .animate-pulse-custom {
+            animation: pulse-custom 2s infinite;
+        }
+
+        /* Hide WaaS by default */
+        .hidden { display: none; }
+        
+        /* Details summary reset for better mobile touch */
+        details summary::-webkit-details-marker { display: none; }
+        summary { list-style: none; }
+
+        /* Custom Scrollbar for a slimmer look */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 selection:bg-yellow-200 selection:text-blue-900 overflow-x-hidden">
+
+    <!-- Emergency Ribbon - Slimmed -->
+    <div class="bg-red-600 text-white py-1.5 px-4 text-center text-[10px] font-bold uppercase tracking-[0.2em] flex items-center justify-center gap-2 animate-pulse sticky top-0 z-[60]">
+        <i data-lucide="alert-triangle" class="w-3 h-3"></i> 
+        24/7 Emergency Dispatch - La Porte 
+        <i data-lucide="alert-triangle" class="w-3 h-3"></i>
+    </div>
+
+    <!-- Sticky Mobile Call Bar - Slimmer & More Modern -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-blue-900/95 p-3 shadow-[0_-10px_30px_rgba(0,0,0,0.2)] flex items-center justify-between border-t border-white/10 backdrop-blur-md">
+        <div class="text-white px-2">
+            <p class="text-[9px] font-bold opacity-60 uppercase tracking-widest">Available Now</p>
+            <p class="text-lg font-black leading-none tracking-tight">(346) 384-8735</p>
+        </div>
+        <a href="tel:3463848735" class="bg-yellow-400 text-blue-950 font-black px-5 py-3 rounded-lg flex items-center gap-2 shadow-lg active:scale-95 transition-all animate-pulse-custom">
+            <i data-lucide="phone" class="w-4 h-4 fill-current"></i>
+            <span class="text-xs tracking-tighter">CALL NOW</span>
+        </a>
+    </div>
+
+    <!-- Header - Slimmed -->
+    <header class="absolute top-8 left-0 right-0 z-40 bg-transparent py-2">
+        <div class="container mx-auto px-5 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center text-blue-950 font-black italic shadow-md text-sm">LP</div>
+                <span class="text-white font-black text-lg tracking-tighter uppercase hidden sm:block">La Portes Electrical</span>
+            </div>
+            <div class="hidden md:flex items-center gap-4">
+                <a href="tel:3463848735" class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-5 py-2 rounded-xl transition-all flex items-center gap-2 shadow-lg text-sm">
+                    <i data-lucide="phone" class="w-4 h-4 fill-current"></i> (346) 384-8735
+                </a>
+                <button id="toggle-engine" class="text-white/40 hover:text-white text-[9px] font-black uppercase tracking-[0.2em] transition-colors">
+                    Engine Log
+                </button>
+            </div>
+            <button class="md:hidden text-white bg-white/10 p-2 rounded-lg backdrop-blur-sm"><i data-lucide="menu" class="w-5 h-5"></i></button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section - Slimmed for Mobile with Company Name -->
+        <section class="relative pt-24 pb-12 md:pt-40 md:pb-24 overflow-hidden bg-slate-900 text-white">
+            <div class="absolute inset-0 z-0 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1621905252507-b354bcadcabc?auto=format&fit=crop&q=80&w=1920" alt="Electrical Work" class="w-full h-full object-cover opacity-20">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+            </div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="max-w-2xl mx-auto md:mx-0 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/20 rounded-full px-3 py-1 mb-6 text-blue-400 text-[10px] font-black tracking-widest uppercase">
+                        <i data-lucide="zap" class="w-3 h-3 animate-pulse"></i> La Porte's Utility Pros
+                    </div>
+                    <h1 class="text-3xl md:text-6xl font-black tracking-tighter mb-4 leading-[1.1]">
+                        <span class="text-yellow-400 italic">La Portes Electrical</span> — Fast & Safe Repairs
+                    </h1>
+                    <p class="text-base md:text-lg text-slate-400 mb-8 leading-relaxed font-medium max-w-md mx-auto md:mx-0">
+                        Reliable utility solutions for your home and business. Open daily until 7:30 PM.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                        <a href="tel:3463848735" class="bg-yellow-400 hover:bg-yellow-300 text-blue-950 text-lg font-black px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-all transform hover:scale-105 active:scale-95 shadow-xl shadow-yellow-400/10 group">
+                            <i data-lucide="phone" class="w-5 h-5 group-hover:rotate-12 transition-transform"></i> (346) 384-8735
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Bar - Condensed -->
+        <section class="bg-white py-4 border-y border-slate-100 shadow-sm relative z-20">
+            <div class="container mx-auto px-4 overflow-x-auto no-scrollbar">
+                <div class="flex items-center justify-center md:justify-around gap-6 min-w-max md:min-w-0">
+                    <div class="flex items-center gap-2">
+                        <div class="flex text-yellow-500">
+                            <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                            <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                            <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                            <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                            <i data-lucide="star" class="w-3 h-3"></i>
+                        </div>
+                        <span class="text-[10px] font-black text-slate-900 uppercase">4.3 Rating</span>
+                    </div>
+                    <div class="h-3 w-px bg-slate-200"></div>
+                    <div class="flex items-center gap-1.5 text-slate-700">
+                        <i data-lucide="check-circle" class="w-3.5 h-3.5 text-green-500"></i>
+                        <span class="text-[10px] font-bold uppercase tracking-wider">Free Estimates</span>
+                    </div>
+                    <div class="h-3 w-px bg-slate-200"></div>
+                    <div class="flex items-center gap-1.5 text-slate-700">
+                        <i data-lucide="clock" class="w-3.5 h-3.5 text-blue-500"></i>
+                        <span class="text-[10px] font-bold uppercase tracking-wider">Daily til 7:30 PM</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services - Slimmed Cards -->
+        <section id="services" class="py-12 md:py-20 bg-slate-50/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-xl mx-auto mb-12">
+                    <span class="text-blue-600 text-[10px] font-black uppercase tracking-[0.3em] mb-2 block">Our Expertise</span>
+                    <h3 class="text-3xl md:text-4xl font-black mb-4 tracking-tighter text-slate-900">Utility Electrical Services</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition-all group overflow-hidden">
+                        <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                            <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="text-xl font-black mb-2 text-slate-900 tracking-tight">Emergency Repairs</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6 font-medium">Rapid response for power loss and hazards. Available for immediate dispatch.</p>
+                        <a href="tel:3463848735" class="inline-flex items-center gap-2 text-blue-700 font-extrabold text-[10px] uppercase tracking-widest group-hover:gap-3 transition-all">
+                            Call Dispatch <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition-all group overflow-hidden">
+                        <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                            <i data-lucide="zap" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="text-xl font-black mb-2 text-slate-900 tracking-tight">Panel Upgrades</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6 font-medium">Safe, high-capacity utility-standard panels for modern homes and businesses.</p>
+                        <a href="tel:3463848735" class="inline-flex items-center gap-2 text-blue-700 font-extrabold text-[10px] uppercase tracking-widest group-hover:gap-3 transition-all">
+                            Free Quote <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition-all group overflow-hidden">
+                        <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                            <i data-lucide="shield" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="text-xl font-black mb-2 text-slate-900 tracking-tight">Safety Audits</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6 font-medium">Protect your property with comprehensive code-compliance and safety checks.</p>
+                        <a href="tel:3463848735" class="inline-flex items-center gap-2 text-blue-700 font-extrabold text-[10px] uppercase tracking-widest group-hover:gap-3 transition-all">
+                            Schedule Audit <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Area - Condensed -->
+        <section class="py-12 md:py-20 bg-slate-900 text-white overflow-hidden relative">
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="flex flex-col lg:flex-row gap-10 items-center">
+                    <div class="lg:w-1/2">
+                        <span class="text-blue-500 text-[10px] font-black uppercase tracking-[0.3em] mb-2 block">Local Focus</span>
+                        <h3 class="text-3xl md:text-5xl font-black mb-6 tracking-tighter">Fast Help in La Porte.</h3>
+                        <p class="text-slate-400 text-base mb-8 leading-relaxed font-medium">Located at 1106 Spencer Hwy. We arrive quickly to all surrounding areas.</p>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl border border-white/5">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-yellow-400"></i> 
+                                <span class="font-bold text-[10px] uppercase">La Porte</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl border border-white/5">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-yellow-400"></i> 
+                                <span class="font-bold text-[10px] uppercase">Deer Park</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl border border-white/5">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-yellow-400"></i> 
+                                <span class="font-bold text-[10px] uppercase">Pasadena</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl border border-white/5">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-yellow-400"></i> 
+                                <span class="font-bold text-[10px] uppercase">Baytown</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 w-full h-48 md:h-auto md:aspect-video rounded-3xl overflow-hidden opacity-30 shadow-2xl relative border-4 border-white/5">
+                        <img src="https://images.unsplash.com/photo-1524813092218-814f83efab85?auto=format&fit=crop&q=80&w=800" alt="La Porte TX Area" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA - Slimmer -->
+        <section class="py-16 md:py-24 bg-blue-700 relative overflow-hidden text-white">
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h3 class="text-3xl md:text-5xl font-black mb-6 tracking-tighter leading-tight">Expert Electrical Help <span class="text-yellow-400 block">Is One Call Away.</span></h3>
+                <a href="tel:3463848735" class="inline-flex items-center gap-4 bg-yellow-400 hover:bg-yellow-300 text-blue-950 text-2xl font-black px-10 py-5 rounded-2xl shadow-xl transition-all transform hover:scale-105 active:scale-95">
+                    <i data-lucide="phone" class="w-8 h-8 fill-current"></i> 
+                    <span>(346) 384-8735</span>
+                </a>
+                <div class="mt-8 flex flex-wrap justify-center gap-4 text-[9px] font-black uppercase tracking-[0.2em] text-blue-200">
+                    <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-3 h-3"></i> Licensed & Insured</span>
+                    <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-3 h-3"></i> Free Estimates</span>
+                </div>
+            </div>
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-[20rem] h-[20rem] bg-blue-600 rounded-full blur-[80px] opacity-40"></div>
+        </section>
+
+        <!-- FAQ - Slimmer Accordions -->
+        <section class="py-12 md:py-20 bg-white">
+            <div class="container mx-auto px-6 max-w-2xl">
+                <div class="text-center mb-10">
+                    <span class="text-blue-600 text-[10px] font-black uppercase tracking-[0.3em] mb-2 block">FAQ</span>
+                    <h3 class="text-2xl font-black tracking-tighter text-slate-900">Common Questions</h3>
+                </div>
+                <div class="space-y-3">
+                    <details class="group border border-slate-50 rounded-xl bg-slate-50/20 overflow-hidden transition-all">
+                        <summary class="flex items-center justify-between p-4 cursor-pointer list-none font-bold text-slate-900 text-sm hover:bg-slate-50">
+                            Insurance claims for damage?
+                            <span class="text-blue-600 group-open:rotate-180 transition-transform"><i data-lucide="chevron-down" class="w-4 h-4"></i></span>
+                        </summary>
+                        <div class="p-4 pt-0 text-slate-500 font-medium leading-relaxed text-xs">
+                            We provide itemized damage reports designed specifically for insurance carriers following surge events.
+                        </div>
+                    </details>
+                    <details class="group border border-slate-50 rounded-xl bg-slate-50/20 overflow-hidden transition-all">
+                        <summary class="flex items-center justify-between p-4 cursor-pointer list-none font-bold text-slate-900 text-sm hover:bg-slate-50">
+                            Panel upgrade timeline?
+                            <span class="text-blue-600 group-open:rotate-180 transition-transform"><i data-lucide="chevron-down" class="w-4 h-4"></i></span>
+                        </summary>
+                        <div class="p-4 pt-0 text-slate-500 font-medium leading-relaxed text-xs">
+                            Most residential panel upgrades are completed within 4-8 hours with minimal power interruption.
+                        </div>
+                    </details>
+                    <details class="group border border-slate-50 rounded-xl bg-slate-50/20 overflow-hidden transition-all">
+                        <summary class="flex items-center justify-between p-4 cursor-pointer list-none font-bold text-slate-900 text-sm hover:bg-slate-50">
+                            Licensed in La Porte?
+                            <span class="text-blue-600 group-open:rotate-180 transition-transform"><i data-lucide="chevron-down" class="w-4 h-4"></i></span>
+                        </summary>
+                        <div class="p-4 pt-0 text-slate-500 font-medium leading-relaxed text-xs">
+                            Yes, we are a fully licensed master electrician company with $2M+ liability coverage.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WaaS Logic Report - Slimmed -->
+    <div id="waas-content" class="hidden pt-24 pb-12 px-6 bg-slate-50 min-h-screen">
+        <div class="max-w-2xl mx-auto mb-10 text-center">
+            <h2 class="text-3xl font-black mb-2 tracking-tighter">ENGINE LOG</h2>
+            <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">WaaS Generation Profile</p>
+            <button id="back-to-site" class="mt-6 bg-blue-600 text-white px-8 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-lg active:scale-95 transition-all">
+                Close Log
+            </button>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-slate-100 max-w-2xl mx-auto font-mono text-[10px] shadow-md">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-blue-700 font-black mb-2 uppercase tracking-widest">Metadata</h3>
+                    <p class="text-slate-500 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                        Locale: La Porte, TX (77571)<br/>
+                        Core: High-Conversion Static
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-blue-700 font-black mb-2 uppercase tracking-widest">Optimization</h3>
+                    <p class="text-slate-500 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                        Mobile: Compact Refined UI<br/>
+                        Icons: Lucide CDN
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer - Slimmed -->
+    <footer class="bg-slate-950 text-white pt-16 pb-24 md:pb-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 text-center md:text-left">
+                <div>
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-4">
+                        <div class="w-6 h-6 bg-yellow-400 rounded-md flex items-center justify-center text-blue-950 font-black italic text-[10px]">LP</div>
+                        <span class="font-black text-sm tracking-tighter uppercase">La Portes Electrical</span>
+                    </div>
+                    <p class="text-slate-500 font-medium text-xs leading-relaxed max-w-xs mx-auto md:mx-0">Professional utility electrical services since inception. Locally owned.</p>
+                </div>
+                <div>
+                    <h4 class="text-[10px] font-black uppercase tracking-widest mb-4 text-blue-500">Contact</h4>
+                    <ul class="space-y-2 text-slate-500 font-bold text-[10px]">
+                        <li>1106 Spencer Hwy, La Porte, TX</li>
+                        <li>(346) 384-8735</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-[10px] font-black uppercase tracking-widest mb-4 text-blue-500">Service</h4>
+                    <p class="text-slate-500 font-bold text-[10px]">Open Daily until 7:30 PM</p>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-8 text-center">
+                <p class="text-slate-600 text-[9px] font-bold uppercase tracking-[0.2em]">© 2024 La Portes Electrical. Licensed Contractor.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // WaaS Toggle Logic
+        const toggleBtn = document.getElementById('toggle-engine');
+        const mainContent = document.getElementById('main-content');
+        const waasContent = document.getElementById('waas-content');
+        const backBtn = document.getElementById('back-to-site');
+
+        toggleBtn.addEventListener('click', () => {
+            mainContent.classList.add('hidden');
+            waasContent.classList.remove('hidden');
+            window.scrollTo(0,0);
+        });
+
+        backBtn.addEventListener('click', () => {
+            mainContent.classList.remove('hidden');
+            waasContent.classList.add('hidden');
+            window.scrollTo(0,0);
+        });
+    </script>
+</body>
+</html>
